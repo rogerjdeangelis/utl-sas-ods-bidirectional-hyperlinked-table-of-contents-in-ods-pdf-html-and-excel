@@ -330,8 +330,7 @@ sas ods bidirectional hyperlinked table of contents in ods pdf htmp and excel
         define count / group noprint;
          break before count / contents="" page;
         compute after;
-         lyn = "^S={URL='anchor.pdf#PAGE=1'
-             color=blue
+         lyn = "^S={URL='anchor.pdf#PAGE=1' color=blue just=left}Return to TOC" ;             
              just=left}Return to TOC" ;
          line lyn $64.;
         endcomp;
@@ -345,8 +344,7 @@ sas ods bidirectional hyperlinked table of contents in ods pdf htmp and excel
         define count / group noprint;
          break before count / contents="" page;
         compute after;
-         lyn = "^S={URL='anchor.pdf#PAGE=1'
-             color=blue
+         lyn = "^S={URL='anchor.pdf#PAGE=1' color=blue just=left }Return to TOC" ;             
              just=left }Return to TOC" ;
          line lyn $64.;
         endcomp;
