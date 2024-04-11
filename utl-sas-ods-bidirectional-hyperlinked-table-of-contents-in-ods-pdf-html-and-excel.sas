@@ -328,9 +328,7 @@ title "Male Students";
     define count / group noprint;
      break before count / contents="" page;
     compute after;
-     lyn = "^S={URL='anchor.pdf#PAGE=1'
-         color=blue
-         just=left}Return to TOC" ;
+     lyn = "^S={URL='anchor.pdf#PAGE=1 color=blue just=left}Return to TOC" ;
      line lyn $64.;
     endcomp;
  run;
@@ -343,9 +341,7 @@ title "Female Students";
     define count / group noprint;
      break before count / contents="" page;
     compute after;
-     lyn = "^S={URL='anchor.pdf#PAGE=1'
-         color=blue
-         just=left }Return to TOC" ;
+     lyn = "^S={URL='anchor.pdf#PAGE=1' color=blue just=left }Return to TOC" ;
      line lyn $64.;
     endcomp;
  run;
